@@ -172,7 +172,7 @@ body {
 .main {
     .selected-svg {
     }
-    margin-top: 98px;
+    margin-top: 99px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -331,17 +331,97 @@ body {
         }
         ul {
             width: 70px;
-            height: 16px;position: absolute;
-            bottom: 27px;left: 50%; display: flex;justify-content: space-between;
+            height: 16px;
+            position: absolute;
+            bottom: 27px;
+            left: 50%;
+            display: flex;
+            justify-content: space-between;
             transform: translateX(-50%);
-            li{
-                width: 16px;height: 16px;
-                background: white; border-radius: 50%;
-                cursor: pointer;border: 1.5px solid white;
+            li {
+                width: 16px;
+                height: 16px;
+                background: white;
+                border-radius: 50%;
+                cursor: pointer;
+                border: 1.6px solid white;
             }
-            .selected-track{
-                background: rgba(#293576, 0.67)
+            .selected-track {
+                background: rgba(#293576, 0.67);
             }
         }
+    }
+}
+.pop-products {
+    margin-top: 45px;
+    height: 508px;width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;overflow: hidden;
+    h1 {
+     
+        margin-bottom: 41px;
+    }
+    .p-carrousel-container {
+        height: 100%;
+        width: 1240px;
+        display: flex;
+        /* overflow: hidden; */
+        background: rgba(yellow, .3); 
+        .p-slier{
+            width: 100%;
+            display: flex;gap:20px;
+            img {
+                height: 316px;
+                width: 295px;
+                object-fit: cover;
+                margin-bottom: 13px;border: 1px solid;
+                
+            }
+            .p-slide {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 373px;
+    
+                .infos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 6px;
+                    h4 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    h3 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 23px;
+    
+                        color: #929292;
+                    }
+                }
+            }
+        }
+        
+    }
+    .p-car-nav{
+        span{
+            height: 32px;
+            width: 32px;
+            img{
+                height: 32px;
+                width: 32px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+        
+
     }
 }

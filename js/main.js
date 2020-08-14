@@ -120,4 +120,21 @@ prevBtn.addEventListener('click', e => {
 
 if (auto_slide) {
     slide_interval = setInterval(nextSlide, slide_time);
-} 
+}
+
+// POPULAR PRODUCTS
+const carousel = document.querySelector('.p-slier');
+const p_nextBtn = document.querySelector('#p-next');
+const carrouselSize = carousel.clientWidth;
+const slideCount = 5;
+let counter = 1;
+p_nextBtn.addEventListener('click', e => {
+    if(counter == 4){
+
+    }else{
+        carousel.style.transition = "transform 0.4s ease-in-out";
+        carousel.style.transform = 'translateX('+ (-carrouselSize-20) * counter  +'px)'
+        counter++
+    }
+
+}) 
