@@ -1,54 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+
 
     <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="showcase">
-
+    <div class="container">
+        <header>
             <nav class="top-nav">
-                <a href="#" class="logo" style="font-size: 40px;">LOGGO</a>
-                <!--  <img src="img/logo2.png" alt=""> -->
+                <img id="logo" src="img/logo.svg" alt="" srcset="">
                 <div class="search">
                     <input type="text" class="searchTerm" placeholder="Search for goods">
                     <a class="searchButton">
-                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <img src="img/search.svg" alt="" srcset="">
                     </a>
                 </div>
                 <ul>
                     <li><a href="">Sign In</a></li>
-                    <li><a href="" class="cart_btn"> Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="ntf">4</span></a>
-                    </li>
-                    
+                    <li><a href="">Cart <img src="img/shopping-cart 1.svg" alt="" srcset=""> <span class="ntf">4</span>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="menu-container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#" class="selected-page">Home</a></li>
+                        <li><a href="#">Demo shop</a></li>
+                        <li><a href="#">New products</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Hot</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Best Buys</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="aside-list">
+                <ul>
+                    <li class="as-nav-links selected"><a href="#" class="selected-aside"> <img
+                                src="img/aside-icons/Pet.svg" alt="" srcset=""> <span>Pet products</span></a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/Electronics.svg" alt=""
+                                srcset=""><span>Electronics</span> </a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/Communication.svg" alt=""
+                                srcset=""><span>Communication products</span></a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/Social.svg" alt=""
+                                srcset=""><span>Sociale networks software</span></a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/printer.svg" alt=""
+                                srcset=""><span>Printers</span></a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/Audio.svg" alt=""
+                                srcset=""><span>Audio content</span></a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/Favs.svg" alt="" srcset=""><span>Our
+                                favorite items</span></a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/User.svg" alt=""
+                                srcset=""><span>User selected goods</span></a></li>
+                    <li class="as-nav-links"><a href="#"> <img src="img/aside-icons/Paper.svg" alt=""
+                                srcset=""><span>Paper planes</span></a></li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <div class="carrousel-container">
+                    <div class="slide current">
+                        
+                        <img src="img/h-img/img-2.jpg" alt="" srcset="">
+                        <div class="content">
+                            <h1>Our best product goes here 1</h1>
+                            <a href="" class="h-btn">Buy now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="slide">
+                        <img src="img/h-img/img-1.jpg" alt="" srcset="">
+                        <div class="content">
+                            <h1>Our best product goes here 2</h1>
+                            <a href="" class="h-btn">Buy now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/h-img/img-3.jpg" alt="" srcset="">
+                        <div class="content">
+                            <h1>Our best product goes here 3</h1>
+                            <a href="" class="h-btn">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <button id="prev"><img src="img/Left.svg" alt="" srcset=""></button>
+                <button id="next"><img src="img/Right.svg" alt="" srcset=""></button>
+                <ul class="carousel-nav">
+                    <li class="track selected-track"></li>
+                    <li class="track"></li>
+                    <li class="track"></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+    <!--  <div class="wrapper">
+        <header>
+
+
+            <nav class="top-nav">
+                <img id="logo" src="img/logo.svg" alt="" srcset="">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Search for goods">
+                    <a class="searchButton">
+                        <img src="img/search.svg" alt="" srcset="">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">Cart <img src="img/shopping-cart 1.svg" alt="" srcset=""> <span class="ntf">4</span>
+                        </a></li>
                 </ul>
             </nav>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#" class="selected-page">Home</a></li>
-                    <li><a href="#">Demo shop</a></li>
-                    <li><a href="#">New products</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Hot</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Best Buys</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-              
-
+            <div class="menu-container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#" class="selected-page">Home</a></li>
+                        <li><a href="#">Demo shop</a></li>
+                        <li><a href="#">New products</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Hot</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Best Buys</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
-    </div>
+        
+    </div> -->
     <script src="js/main.js"></script>
 </body>
 
