@@ -125,16 +125,28 @@ if (auto_slide) {
 // POPULAR PRODUCTS
 const carousel = document.querySelector('.p-slier');
 const p_nextBtn = document.querySelector('#p-next');
+const p_prevBtn = document.querySelector('#p-prev');
 const carrouselSize = carousel.clientWidth;
-const slideCount = 5;
-let counter = 1;
+const slideCount = 4;
+let translated = 0;
+let counter = 0;
 p_nextBtn.addEventListener('click', e => {
     if(counter == 4){
 
     }else{
         carousel.style.transition = "transform 0.4s ease-in-out";
-        carousel.style.transform = 'translateX('+ (-carrouselSize-20) * counter  +'px)'
         counter++
+        carousel.style.transform = 'translateX('+ (-carrouselSize-20) * counter  +'px)'
+    }
+
+}) 
+p_prevBtn.addEventListener('click', e => {
+    if(counter == 0){
+
+    }else{
+        carousel.style.transition = "transform 0.4s ease-in-out";
+        counter--
+        carousel.style.transform = 'translateX('+ (-carrouselSize-20) * counter  +'px)'
     }
 
 }) 
