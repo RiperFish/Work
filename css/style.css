@@ -401,7 +401,6 @@ body {
   width: 1240px;
   display: flex;
   /* overflow: hidden; */
-  background: rgba(255, 255, 0, 0.3);
 }
 
 .pop-products .p-carrousel-container .p-slier {
@@ -415,7 +414,7 @@ body {
   width: 295px;
   object-fit: cover;
   margin-bottom: 13px;
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .pop-products .p-carrousel-container .p-slier .p-slide {
@@ -447,16 +446,12 @@ body {
   color: #929292;
 }
 
-.pop-products .p-car-nav span {
+.pop-products .p-car-nav img {
   height: 32px;
   width: 32px;
+  filter: invert(99%) sepia(1%) saturate(154%) hue-rotate(166deg) brightness(115%) contrast(100%);
 }
 
-.pop-products .p-car-nav span img {
-  height: 32px;
-  width: 32px;
-}
-
-.pop-products .p-car-nav span img:hover {
+.pop-products .p-car-nav img:hover {
   cursor: pointer;
 }
