@@ -208,7 +208,7 @@ body {
 }
 
 .main .aside-list ul .selected a {
-  color: white !important;
+  color: white;
 }
 
 .main .aside-list ul .selected img {
@@ -394,6 +394,10 @@ body {
 
 .pop-products h1 {
   margin-bottom: 41px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
 }
 
 .pop-products .p-carrousel-container {
@@ -446,6 +450,12 @@ body {
   color: #929292;
 }
 
+.pop-products .p-car-nav {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
 .pop-products .p-car-nav img {
   height: 32px;
   width: 32px;
@@ -454,4 +464,13 @@ body {
 
 .pop-products .p-car-nav img:hover {
   cursor: pointer;
+}
+
+.pop-products .p-car-nav h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #474747;
 }

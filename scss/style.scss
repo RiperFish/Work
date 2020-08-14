@@ -190,7 +190,7 @@ body {
             .selected {
                 background-color: #293576;
                 a {
-                    color: white !important;
+                    color: white;
                 }
                 img {
                     /* filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%); */
@@ -362,6 +362,10 @@ body {
     overflow: hidden;
     h1 {
         margin-bottom: 41px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
     }
     .p-carrousel-container {
         height: 100%;
@@ -410,14 +414,25 @@ body {
         }
     }
     .p-car-nav {
+        display: flex;
+        align-items: center;
+        gap: 11px;
         img {
             height: 32px;
             width: 32px;
-            filter: invert(99%) sepia(1%) saturate(154%) hue-rotate(166deg) brightness(115%)
-                                contrast(100%);
+            filter: invert(99%) sepia(1%) saturate(154%) hue-rotate(166deg) brightness(115%) contrast(100%);
             &:hover {
                 cursor: pointer;
             }
+        }
+        h5 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+
+            color: #474747;
         }
     }
 }
