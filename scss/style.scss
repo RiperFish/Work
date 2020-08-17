@@ -721,40 +721,53 @@ body {
     background: #293576;
     position: absolute;
     left: 0;
+    display: flex;
+    justify-content: center;
     /*  margin: 0 auto; 
     overflow: hidden; */
     height: 72px;
     .f-nav {
         display: flex;
-        align-items: center;
-        justify-content: center;
         height: 100%;
+        max-width: 1240px;
+        width: 1240px;
 
+        align-items: center;
+        p {
+            width: 650px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: white;
+        }
         ul {
             display: flex;
-            justify-content: center;
             align-items: center;
             gap: 29.5px;
+            width: 100%;
+            justify-content: flex-end;
+            margin-right: -20px;
             li {
                 position: relative;
                 top: -0.6px;
-            }
-            a {
-                color: white;
-                transition: 0.3s ease-in-out;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 16px;
+                a {
+                    color: white;
+                    transition: 0.3s ease-in-out;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
 
-                text-align: center;
-                padding: 0px 19px 20px 19px;
-                &:nth-last-child() {
-                    padding-right: 0px;
-                }
-                &:hover {
-                    border-bottom: 5px solid rgba(255, 255, 255, 0.4);
-                    text-decoration: none;
+                    text-align: center;
+                    padding: 0px 19px 20px 19px;
+                    &:nth-last-child() {
+                        padding-right: 0px;
+                        color: green !important;
+                    }
+                    &:hover {
+                        border-bottom: 5px solid rgba(255, 255, 255, 0.4);
+                        text-decoration: none;
+                    }
                 }
             }
         }
