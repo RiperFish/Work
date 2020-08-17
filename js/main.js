@@ -123,30 +123,66 @@ if (auto_slide) {
 }
 
 // POPULAR PRODUCTS
-const carousel = document.querySelector('.p-slier');
-const p_nextBtn = document.querySelector('#p-next');
-const p_prevBtn = document.querySelector('#p-prev');
-const carrouselSize = carousel.clientWidth;
-const slideCount = 4;
-let translated = 0;
-let counter = 0;
-p_nextBtn.addEventListener('click', e => {
-    if(counter == 4){
+const pop_carousel = document.querySelector('.pop-products .p-slier');
+const pop_p_nextBtn = document.querySelector('.pop-products #p-next');
+const pop_p_prevBtn = document.querySelector('.pop-products #p-prev');
+const pop_carrouselSize = pop_carousel.clientWidth;
 
-    }else{
-        carousel.style.transition = "transform 0.4s ease-in-out";
-        counter++
-        carousel.style.transform = 'translateX('+ (-carrouselSize-20) * counter  +'px)'
+let pop_counter = 0;
+pop_p_nextBtn.addEventListener('click', e => {
+    if (pop_counter != 4) {
+        pop_carousel.style.transition = "transform 0.4s ease-in-out";
+        pop_counter++
+        pop_carousel.style.transform = 'translateX(' + (-pop_carrouselSize - 16) * pop_counter + 'px)'
     }
 
+})
+pop_p_prevBtn.addEventListener('click', e => {
+    if (pop_counter != 0) {
+        pop_carousel.style.transition = "transform 0.4s ease-in-out";
+        pop_counter--
+        pop_carousel.style.transform = 'translateX(' + (-pop_carrouselSize - 16) * pop_counter + 'px)'
+    }
 }) 
-p_prevBtn.addEventListener('click', e => {
-    if(counter == 0){
-
-    }else{
-        carousel.style.transition = "transform 0.4s ease-in-out";
-        counter--
-        carousel.style.transform = 'translateX('+ (-carrouselSize-20) * counter  +'px)'
+// NEW PRODUCTS
+const new_carousel = document.querySelector('.new-products .p-slier');
+const new_p_prevBtn = document.querySelector('.new-products #p-prev');
+const new_p_nextBtn = document.querySelector('.new-products #p-next');
+const new_carrouselSize = new_carousel.clientWidth;
+let new_counter = 0;
+new_p_nextBtn.addEventListener('click', e => {
+    if (new_counter != 4) {
+        new_carousel.style.transition = "transform 0.4s ease-in-out";
+        new_counter++
+        new_carousel.style.transform = 'translateX(' + (-new_carrouselSize - 16) * new_counter + 'px)'
     }
 
+})
+new_p_prevBtn.addEventListener('click', e => {
+    if (new_counter != 0) {
+        new_carousel.style.transition = "transform 0.4s ease-in-out";
+        new_counter--
+        new_carousel.style.transform = 'translateX(' + (-new_carrouselSize - 16) * new_counter + 'px)'
+    }
+}) 
+// DISCOUNTS
+const d_carousel = document.querySelector('.discount .p-slier');
+const d_p_prevBtn = document.querySelector('.discount #p-prev');
+const d_p_nextBtn = document.querySelector('.discount #p-next');
+const d_carrouselSize = d_carousel.clientWidth;
+let d_counter = 0;
+d_p_nextBtn.addEventListener('click', e => {
+    if (d_counter != 4) {
+        d_carousel.style.transition = "transform 0.4s ease-in-out";
+        d_counter++
+        d_carousel.style.transform = 'translateX(' + (-d_carrouselSize - 16) * d_counter + 'px)'
+    }
+
+})
+d_p_prevBtn.addEventListener('click', e => {
+    if (d_counter != 0) {
+        d_carousel.style.transition = "transform 0.4s ease-in-out";
+        d_counter--
+        d_carousel.style.transform = 'translateX(' + (-d_carrouselSize - 16) * d_counter + 'px)'
+    }
 }) 
